@@ -1,0 +1,28 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+* {
+  box-sizing: border-box;
+}
+
+:host{
+  display: flex;
+  height: 100%;
+}
+
+mat-card {
+    margin-top: 25px;
+    align-content: center;
+  }
+
+mat-car-actions{
+  margin-top: auto;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+
