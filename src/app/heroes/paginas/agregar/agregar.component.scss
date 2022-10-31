@@ -40,7 +40,7 @@ h2 {
 }
 
 button[type=submit] {
-    width: 50%;
+    width: 25%;
     background-color: #cc5a19;
     color: white;
     padding: 14px 20px;
@@ -61,14 +61,21 @@ div {
     padding: 5px;
 }
 
-.container {
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-}
 
 label {
     color: black;
-    width: 80%;
-    
+    width: 80%;    
+}
+
+.container {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(8, 8, 8), rgb(219, 219, 218))
+}
+
+.contentform{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,39 +1,16 @@
 <div class="container mt-2">
-    <div class="container">
-        <h2 style="display: flex; justify-content: center; justify-items: center;">Registrar Héroes</h2>
+    <div class="container">        
+        <h2  style="display: flex; justify-content: center; justify-items: center;">{{id?  'Modificar Información Héroes': 'Guardar Información Héroes'}}</h2>
     </div>
-    <form action="/heroes/listado">
-        <div class="input-group mb-3">
-            <span class="input-group-text">Héroe</span>
-            <input type="text" class="form-control" placeholder="ID del Héroe">
-            <input type="text" class="form-control" placeholder="Nombre del Héroe">
-        </div>
-        <div class="form1">
-            <div class="mb-3 mt-3">
-                <label for="text">
-                    <h3><strong>Editor:</strong></h3>
-                </label>
-                <input type="text" class="form-control" placeholder="Digite..." name="publisher">
-            </div>
-            <div class="mb-3 mt-3">
-                <label for="text">
-                    <h3><strong>Alter_Ego:</strong></h3>
-                </label>
-                <input type="text" class="form-control" placeholder="Digite..." name="alter_ego">
-            </div>
-            <div class="mb-3">
-                <label for="text">
-                    <h3><strong>Primera Aparición:</strong></h3>
-                </label>
-                <input type="text" class="form-control" placeholder="Digite..." name="first_appearance">
-            </div>
-            <div class="mb-3">
-                <label for="text">
-                    <h3><strong>Caracteres:</strong></h3>
-                </label>
-                <input type="text" class="form-control" placeholder="Digite..." name="characters">
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary">REGISTRAR</button>
+ 
+    <form [formGroup]="formGroup" (ngSubmit)="guardar()">
+
+        <dynamic-material-form [group]="formGroup" [model]="formModel"></dynamic-material-form>
+
+        <button class="btn btn-primary" type="submit">
+            <span class="spinner-grow spinner-grow-sm"></span>
+            {{id?  'Editar': 'Guardar'}}
+          </button>
+
     </form>
 </div>

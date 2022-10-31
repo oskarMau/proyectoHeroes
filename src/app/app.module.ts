@@ -14,8 +14,7 @@ import { TestComponent } from './shared/test/test.component';
   declarations: [
     AppComponent,
     ErroePageComponent,
-    TestComponent,
-    ErroePageComponent
+    TestComponent
   ],
   imports: [
     BrowserModule,

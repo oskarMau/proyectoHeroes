@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { ErroePageComponent } from './shared/erroe-page/erroe-page.component';
 
 const routes: Routes = [
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
   path: '404',
-  component: ErrorPageComponent
+  component: ErroePageComponent
 },
 {
   path: '**',

@@ -11,7 +11,9 @@ import { MaterialModule } from '../material/material.module';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DynamicFormsMaterialUIModule } from '@ng-dynamic-forms/ui-material';
+
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { FormsModule } from '@angular/forms';
     MaterialModule,
     MatPaginatorModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    DynamicFormsMaterialUIModule,
+    ReactiveFormsModule
   ]
 })
 export class HeroesModule { }

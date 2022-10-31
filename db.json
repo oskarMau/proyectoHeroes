@@ -166,6 +166,14 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "superhero": "Super boy hango",
+      "publisher": "DC Comics",
+      "alter_ego": "BBVA",
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne",
+      "id": "flidkwo"
     }
   ]
 }
